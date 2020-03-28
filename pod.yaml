@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: jboss-pod
+  name: jboss-podss
   labels:
     app: app
 spec:
   containers:
-    - name: jboss
+    - name: jbossnew
       ports:
         - name: http
           containerPort: 8080
@@ -20,7 +20,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: jbossservice1
+  name: jbossnewservice1
   labels:
     app: app
 spec:
